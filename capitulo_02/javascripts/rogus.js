@@ -4,8 +4,13 @@ function moneyTextToFloat(text) {
 }
 
 function floatToMoneyText(value) {
+	console.log(value < 1 ? "0" : "");
+	console.log(Math.floor(value * 100));
 	var text = (value < 1 ? "0" : "") + Math.floor(value * 100);
+	console.log(text);
 	text = "R$ " + text;
+	console.log(text);
+	console.log(text.substr(0, text.length - 2) + "," + text.substr(-2));
 	return text.substr(0, text.length - 2) + "," + text.substr(-2);
 }
 
@@ -48,6 +53,7 @@ function onDocumentLoad() {
 	var textEdits = document.getElementsByClassName("quantity");
 
 	for(var i = 0; i < textEdits.length; i++) {
+		//toda vez que um campo .quantity mudar, esse método sera invocado
 		textEdits[i].onchange = onQuantityChange;
 	}
 }
