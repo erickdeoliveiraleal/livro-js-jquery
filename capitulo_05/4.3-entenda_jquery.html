@@ -1,10 +1,16 @@
 <html>
-<head>
-	<script src="../shared/jquery-1.8.3.min.js"></script>
-</head>
+
 <body>
+
 	<p class="par">Primeira linha</p>
 	<p class="impar">Segunda linha</p>
 	<input type="text" id="texto" class="par" value="um texto qualquer">
 </body>
 </html>
+<script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+<script>
+$("p").css("background-color", "lightgreen");
+$("#texto").css("color", "pink").val("0");
+$(".par").css("background-color", "lightblue");
+</script>
+
