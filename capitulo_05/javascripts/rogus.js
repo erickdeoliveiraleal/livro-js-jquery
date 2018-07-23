@@ -22,13 +22,12 @@ function writeTotal(value) {
 function calculateTotalProducts() {
     var produtos = $(".produto");
     var total = 0;
-
-    for(var pos = 0; pos < produtos.length; pos++) {
-        var $produto = $(produtos[pos]);
+    $(produtos).each(function(pos, produto) {
+        var $produto = $(produto);
         var quantity = moneyTextToFloat($produto.find(".quantity").val());
         var price = moneyTextToFloat($produto.find(".price").text());
         total += quantity * price;
-    }
+    });
     return total;
 }
 
