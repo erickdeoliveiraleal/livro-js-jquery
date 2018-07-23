@@ -33,9 +33,7 @@ function calculateTotalProducts() {
 		var qtyText = qtyElements[0].value;
 		var quantity = moneyTextToFloat(qtyText);
 
-		var subtotal = quantity * price;
-
-		totalProdutos += subtotal;
+        totalProdutos += quantity * price;
 
 	}
 
