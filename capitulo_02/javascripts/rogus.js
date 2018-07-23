@@ -54,6 +54,7 @@ function onDocumentLoad() {
 
 	for(var i = 0; i < textEdits.length; i++) {
 		//toda vez que um campo .quantity mudar, esse método sera invocado
+		//textEdits[i].onchange =function(){writeTotal(calculateTotalProducts());};
 		textEdits[i].onchange = onQuantityChange;
 	}
 }
