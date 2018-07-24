@@ -1,9 +1,9 @@
 function obrigatorio(text) {
-  return text.trim() !== "";
+    return text.trim() !== "";
 }
 
-$(function() {
-  $("#cpf").validador();
+$(function () {
+    $("#cpf").validador();
 
-  $("#obrigatorio").validador({function: obrigatorio});
+    $("#obrigatorio").validador({function: obrigatorio});
 });

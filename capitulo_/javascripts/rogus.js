@@ -24,7 +24,7 @@ function calculateTotalProducts() {
 
     var totalProdutos = 0;
 
-    for(var pos = 0; pos < produtos.length; pos++) {
+    for (var pos = 0; pos < produtos.length; pos++) {
         var priceElements = produtos[pos].getElementsByClassName("price");
         var priceText = priceElements[0].innerHTML;
         var price = moneyTextToFloat(priceText);
@@ -47,7 +47,7 @@ function onQuantityChange() {
 function onDocumentLoad() {
     var textEdits = document.getElementsByClassName("quantity");
 
-    for(var i = 0; i < textEdits.length; i++) {
+    for (var i = 0; i < textEdits.length; i++) {
         textEdits[i].onchange = onQuantityChange;
     }
 }

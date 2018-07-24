@@ -22,7 +22,7 @@ function writeTotal(value) {
 function calculateTotalProducts() {
     var produtos = $(".produto");
     var total = 0;
-    $(produtos).each(function(pos, produto) {
+    $(produtos).each(function (pos, produto) {
         var $produto = $(produto);
         var quantity = moneyTextToFloat($produto.find(".quantity").val());
         var price = moneyTextToFloat($produto.find(".price").text());
@@ -38,7 +38,7 @@ function onQuantityChange() {
 function onDocumentLoad() {
     var textEdits = document.getElementsByClassName("quantity");
 
-    for(var i = 0; i < textEdits.length; i++) {
+    for (var i = 0; i < textEdits.length; i++) {
         textEdits[i].onchange = onQuantityChange;
     }
 }
