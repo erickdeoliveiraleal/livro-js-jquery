@@ -1,6 +1,6 @@
 $(function () {
-    var meu_login = "seu@email.com";
-    var server = "http://livro-capitulo07.herokuapp.com";
+    var meu_login = "meu";
+    var server = "http://livro-capitulo07.herokuapp.com/tarefas";
 
     var $lastClicked;
 

@@ -1,19 +1,12 @@
-/*
-	Paleta de cores:
-	#ffffff
-	#cc0000
-	#333333
-*/
 html {
     font: 100%;
     font-family: helvetica, colibri, tahoma, sans-serif;
     color: #333;
-    background-image: url("../images/brillant.png");
+    background-image: url("https://raw.github.com/pbalduino/livro-js-jquery/master/capitulo_06/images/brillant.png");
     background-position: initial initial;
     background-repeat: initial initial;
     text-shadow: 0.1em 0.1em 0.1em #eee;
 }
-
 div.todo {
     width: 40em;
     border: 1px solid #eee;
@@ -23,63 +16,48 @@ div.todo {
     box-shadow: 0.5em 0.5em 0.5em #eee;
     background-color: white;
 }
-
 div.todo h2 {
     color: #c00;
 }
-
 #tarefa, .tarefa-edit {
     font-size: 1.2em;
 }
-
 #tarefa {
     width: 33em;
 }
-
 .tarefa-edit {
     width: 31em;
 }
-
 #tarefa-list {
     width: 40em;
     margin-top: 1em;
 }
-
 .tarefa-item {
     padding: 1em;
     vertical-align: middle;
 }
-
 .tarefa-item:hover {
     background-color: #eee;
 }
-
-.tarefa-texto {
+.tarefa-text {
     display: block;
     float: left;
 }
-
 .clear {
     clear: both;
 }
-
 .tarefa-delete {
     width: 16px;
     height: 16px;
-
-    background-image: url("../images/delete.gif");
+    background-image: url("https://raw.github.com/pbalduino/livro-js-jquery/master/capitulo_06/images/delete.gif");
     background-repeat: no-repeat;
-
     display: block;
     float: right;
-
     visibility: hidden;
 }
-
 .tarefa-item:hover .tarefa-delete {
     visibility: visible;
 }
-
-.tarefa-item, .tarefa-texto, .tarefa-delete {
-    /* border: 1px solid black; */
+.tarefa-id {
+	visibility: hidden;
 }
